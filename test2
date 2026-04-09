@@ -1,0 +1,38 @@
+#  BRIDGE  (shared by both directions)
+# ---------------------------------------------------------
+bridge_length       = 60.0   # Total bridge length
+                                 # Usable slots = floor(bridge_length / 4.5)
+                                 # e.g. 45.0 -> 10 slots, 1000.0 -> 222 slots
+
+# ---------------------------------------------------------
+#  WEST SIDE  (vehicles travelling West -> East)
+# ---------------------------------------------------------
+west_arrival_mean   = 1.0     
+                                 
+west_speed_min      = 17.0       
+west_speed_max      = 15.0      
+
+# ---------------------------------------------------------
+#  EAST SIDE  (vehicles travelling East -> West)
+# ---------------------------------------------------------
+east_arrival_mean   = 3.0      
+east_speed_min      = 5.0       
+east_speed_max      = 15.0      
+
+# ---------------------------------------------------------
+#  MODE 2 - Traffic Lights
+# ---------------------------------------------------------
+green_duration      = 20.0      
+
+# ---------------------------------------------------------
+#  MODE 3 - Traffic Officer
+# ---------------------------------------------------------
+k1                  = 6         #  West->East
+k2                  = 8         #  East->West 
+
+# ---------------------------------------------------------
+#  GENERAL
+# ---------------------------------------------------------
+ambulance_pct       = 0.5      # Fraction of vehicles that are ambulances e.g. 0.10 = 10%
+                        
+simulation_duration = 60.0      # Total simulation time in seconds
